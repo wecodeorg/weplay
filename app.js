@@ -33,6 +33,10 @@ app.post("/", function(req,res)
         res.write("<p>The weather is currently " + weatherdesc + "</p>");
         res.write("<h1>The temperature in "+ query +" is "+ temp + " degrees Celcius.</h1>");
         res.write("<img src="+ imageURL + ">");
+       
+   
+
+      
 
         switch (icon) {
             case '01d':

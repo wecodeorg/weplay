@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css'>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
@@ -23,25 +23,46 @@
   </ul>
   </div>
 
-    <form  action="/" method="POST">
-        <h4 class="mb-0">City Name:</h4>
-        <input id="cityInput" type="text" name="cityName"> 
-        <button type="submit">Search</button>
-      </form>
+    <br>
+
+    <div class="container" align="right">
+    <div class="row">
     
-     <div class="row featurette">
-      <div class="col-md-7 order-md-2">
-      
-        <div class="player">
+        <div class="col-md-4 ">
+        <div class="weatherback" >
+        <div class="row" align="center">
+        <form  action="/" method="POST">
+            <h4 class="mb-0">City Name:</h4>
+            <input id="cityInput" type="text" name="cityName"> 
+            <button type="submit">Search</button>
+        </form>
+        </div>
+                <div class="text-muted text-uppercase text-center details">
+                <h5 class="my-3">
+                    City Name
+                </h5>
+                <div class="my-3">Weather Conditon</div>
+                <div class="display-4 my-4">
+                    <span>temp</span>
+                    <span>&deg;C</span>
+                </div>   
+                </div>     
+
+        </div>
+        </div>
+        <br><br>
+        <div class="col-md-8">
+        <div class="playerback">
+    <div class="player">
     <div class="details">
-      <div class="now-playing">PLAYING x OF y</div>
+      <div class="now-playing"></div>
       <div class="track-art"></div>
       <div class="track-name">Track Name</div>
       <div class="track-artist">Track Artist</div>
     </div>
     <div class="buttons">
       <div class="prev-track" onclick="prevTrack()"><i class="fa fa-step-backward fa-2x"></i></div>
-      <div class="playpause-track" onclick="playpauseTrack()"><i class="fa fa-play-circle fa-5x"></i></div>
+      <div class="playpause-track" onclick="playpauseTrack()"><i class="fa fa-play-circle fa-2x"></i></div>
       <div class="next-track" onclick="nextTrack()"><i class="fa fa-step-forward fa-2x"></i></div>
     </div>
     <div class="slider_container">
@@ -54,15 +75,14 @@
       <input type="range" min="1" max="100" value="99" class="volume_slider" onchange="setVolume()">
       <i class="fa fa-volume-up"></i>
     </div>
-  </div>
-
-      </div>
-
-      <div class="col-md-4 order-md-1">
-      <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>
-       
-
-      </div>
+    </div>
+    </div>
+    
+  
+        </div>
+          
+        
+    </div>
     </div>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
