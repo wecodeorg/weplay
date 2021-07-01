@@ -5,6 +5,15 @@ body {
   transition: background-color .5s;
 }
 
+h1 {
+  padding-top: 30px;
+      font-family: "Ubuntu";
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+#searchbox {
+  padding-top: 25px;
+}
 .player {
   height: 95vh;
   display: flex;
@@ -120,6 +129,7 @@ i.fa-play-circle, i.fa-pause-circle, i.fa-step-forward, i.fa-step-backward {
   max-height: 500px;
   border-radius: 20px;
   background: #FFF3E2;
+  
 }
 
 .weatherback {
@@ -129,3 +139,8 @@ i.fa-play-circle, i.fa-pause-circle, i.fa-step-forward, i.fa-step-backward {
   background: #F7FBFC;
 }
 
+@media only screen and (max-width: 768px) {
+  .col-md-8 {
+  padding-top: 25px;
+}
+}
