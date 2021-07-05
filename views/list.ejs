@@ -38,6 +38,7 @@
         </form>
         </div>
                
+
                 <div class="text-muted text-uppercase text-center details">
                   <h5 class="my-3"> <%= query %> 
                     <img src= <%= imageURL %> >
@@ -45,9 +46,9 @@
 
                 <div class="my-3"> <h5> <%= weatherDesc %> </h5>  </div>
 
-                  <div class="temp"> <%= temp %>&deg; <span class="degree"> C</span>
+                  <div class="temp"> <%= temp %> <%= degree %> 
                   </div>
-                </div>    
+                </div>     
 
         </div>
         </div>
@@ -91,3 +92,16 @@
   <script src="js/main.js"></script>
 </body>
 </html>
+
+
+
+        <!-- <div class="text-muted text-uppercase text-center details">
+          <h5 class="my-3">
+              City Name
+          </h5>
+          <div class="my-3">Weather Conditon</div>
+          <div class="display-4 my-4">
+              <span>temp</span>
+              <span>&deg;C</span>
+          </div>   
+          </div>      -->

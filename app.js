@@ -12,10 +12,11 @@ let weatherDesc = "";
 let temp = "";
 let query = "";
 let imageURL = "";
+let degree = "";
 
 app.get("/", function(req,res)
 {
-    res.render("list", {weatherDesc: weatherDesc, temp: temp, query: query, imageURL: imageURL}); 
+    res.render("list", {weatherDesc: weatherDesc, temp: temp, query: query, imageURL: imageURL, degree: degree}); 
 });
 
 app.post("/", function(req,res)
@@ -34,6 +35,7 @@ app.post("/", function(req,res)
             weatherDesc = weatherData.weather[0].description; 
             const icon = weatherData.weather[0].icon ;
             imageURL= "https://openweathermap.org/img/wn/" + icon+"@2x.png";
+            degree = "°C";
             res.redirect("/");
         
         });
