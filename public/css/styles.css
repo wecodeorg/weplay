@@ -139,6 +139,18 @@ i.fa-play-circle, i.fa-pause-circle, i.fa-step-forward, i.fa-step-backward {
   background: #F7FBFC;
 }
 
+.temp {
+    font-size: 50px;
+    letter-spacing: -.7px;
+    font-weight: 500;
+}
+.degree {
+    opacity: .6;
+    /* line-height: 1.28; */
+    font-size: 24px;
+    /* margin-right: -1px; */
+    padding-left: 5px;
+}
 @media only screen and (max-width: 768px) {
   .col-md-8 {
   padding-top: 25px;
