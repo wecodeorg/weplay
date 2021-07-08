@@ -38,40 +38,51 @@ app.post("/", function(req,res)
             imageURL= "https://openweathermap.org/img/wn/" + icon+"@2x.png";
             degree = "°C";
             res.redirect("/");
-            
-
 
             switch (icon) {
             case '01d':
+            case '01n':
                 console.log("A");
+                music = "https://open.spotify.com/embed/playlist/6GwxANcfxvevumRd371w6U";
                 break;
             case '02d':
+            case '02n':
                 console.log("B");
+                music = "https://open.spotify.com/embed/playlist/1CmxM3Z83xogtRNaVBV3j3";
                 break;
             case '03d':
+            case '03n':
                 console.log("C");
+                music = "https://open.spotify.com/embed/playlist/4MSNnRm3nxUlUtXrFHEhLl";
                 break;
             case '04d':
+            case '04n':
                 console.log("D");
-                music ="https://open.spotify.com/embed/album/1DFixLWuPkv3KT3TnV35m3";
+                music ="https://open.spotify.com/embed/playlist/1VJxvirhgTtwud2goRcJWv";
                 break;
             case '09d':
+            case '09n':
                 console.log("E");
+                music = "https://open.spotify.com/embed/playlist/4qZxsjSX4kdAuLAhzBQNCs";
                 break;
             case '10d':
+            case '10n':
                 console.log("F");
-                music ="https://open.spotify.com/embed/album/1DFixLWuPkv3KT3TnV35m3";
-                break;
+                music ="https://open.spotify.com/embed/playlist/3KiwmZHTFsq9DWPA5tGPID";
             case '11d':
                 console.log("G");
+                music ="https://open.spotify.com/embed/playlist/5RBul7U3RSkNeZLlaX5Q2z";
                 break;
              case '13d':
+             case '13n':
                 console.log("H");
+                music = "https://open.spotify.com/embed/playlist/14zu2CMDgku3DKNGb5poQi";
                 break;
             case '50d':
+            case '50n':
                 console.log("I");
+                music = "https://open.spotify.com/embed/playlist/4tsEbRWKDhb5YZSXhLO31I";
                 break;
-        
             default:
                 console.log("null");
                 break;
