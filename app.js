@@ -1,8 +1,8 @@
-
 const express = require("express");
 const https = require("https");
 const bodyParser = require("body-parser");
 const app = express();
+
 
 app.set('view engine','ejs');
 app.use(bodyParser.urlencoded({extended: true}));
@@ -13,10 +13,11 @@ let temp = "";
 let query = "";
 let imageURL = "";
 let degree = "";
+let music = "";
 
 app.get("/", function(req,res)
 {
-    res.render("list", {weatherDesc: weatherDesc, temp: temp, query: query, imageURL: imageURL, degree: degree}); 
+    res.render("list", {weatherDesc: weatherDesc, temp: temp, query: query, imageURL: imageURL, degree: degree, music: music}); 
 });
 
 app.post("/", function(req,res)
@@ -37,6 +38,42 @@ app.post("/", function(req,res)
             imageURL= "https://openweathermap.org/img/wn/" + icon+"@2x.png";
             degree = "°C";
             res.redirect("/");
+            
+
+
+            switch (icon) {
+            case '01d':
+                console.log("A");
+                break;
+            case '02d':
+                console.log("B");
+                break;
+            case '03d':
+                console.log("C");
+                break;
+            case '04d':
+                console.log("D");
+                music ="https://open.spotify.com/embed/album/1DFixLWuPkv3KT3TnV35m3";
+            case '09d':
+                console.log("E");
+                break;
+            case '10d':
+                console.log("F");
+                music ="https://open.spotify.com/embed/album/1DFixLWuPkv3KT3TnV35m3";
+            case '11d':
+                console.log("G");
+                break;
+             case '13d':
+                console.log("H");
+                break;
+            case '50d':
+                console.log("I");
+                break;
+        
+            default:
+                console.log("null");
+                break;
+        }
         
         });
 
@@ -64,39 +101,6 @@ app.listen(3000, function()
         // // JSON Stringify (converts all in JSON string)
         // const object = {name:"sneha",sem:"sixth"}
         // console.log(JSON.stringify(object));
-
-
-        // switch (icon) {
-        //     case '01d':
-        //         console.log("A");
-        //         break;
-        //     case '02d':
-        //         console.log("B");
-        //         break;
-        //     case '03d':
-        //         console.log("C");
-        //         break;
-        //     case '04d':
-        //         console.log("D");
-        //         break;
-        //     case '09d':
-        //         console.log("E");
-        //         break;
-        //     case '10d':
-        //         console.log("F");
-        //         break;
-        //     case '11d':
-        //         console.log("G");
-        //         break;
-        //      case '13d':
-        //         console.log("H");
-        //         break;
-        //     case '50d':
-        //         console.log("I");
-        //         break;
+      
         
-        //     default:
-        //         console.log("null");
-        //         break;
-        // }
 
