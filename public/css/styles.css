@@ -15,12 +15,38 @@ h1 {
     font-size: 2.5rem;
     font-weight: bold;
 }
+
+#id1 {
+    letter-spacing: 4px;
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+    margin: 25px 0 10px 0;
+}
+
+#id2 {
+    text-align: center;
+    color: #000000;
+    font-size: 15px;
+    letter-spacing: 5px;
+    font-weight: 300;
+    margin-bottom: 25px;
+}
+
+#id3{
+   letter-spacing: 2px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 300;
+    color: #ffffff;
+}
+
 #searchbox {
   padding-top: 25px;
 }
 
 iframe {
-  padding-bottom :50px;
+  margin-bottom: 20px;
   border-radius: 20px;
 }
 
@@ -37,7 +63,17 @@ iframe {
   max-width: 400px;
   max-height: 500px;
   border-radius: 20px;
-  background: #F7FBFC;
+  background-color: rgba(255,255,255,0.06);
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255,255,255,0.1);
+  box-shadow: 20px 20px 22px rgba(0,0,0,0.2);
+  font-family: 'Poppins',sans-serif;
+  color: #fcfcfc;
 }
 
 .temp {

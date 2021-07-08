@@ -34,18 +34,18 @@
         <div  id="searchbox" class="row" align="center">
         <form  action="/" method="POST">
             <h4 class="mb-0"></h4>
-            <input id="cityInput" type="text" name="cityName" placeholder="CityName"> 
+            <input id="cityInput" type="text" name="cityName" placeholder="CityName" required > 
             <button type="submit">Search</button>
         </form>
         </div>
                
 
                 <div class="text-muted text-uppercase text-center details">
-                  <h5 class="my-3"> <%= query %></h5> 
+                  <h5 class="my-3" id="id1"> <%= query %></h5> 
 
-                 <h5 class="my-3"> <%= weatherDesc %> </h5>  
+                 <h5 class="my-3" id="id2"> <%= weatherDesc %> </h5>  
 
-                  <h5 class="my-3"> <%= temp %><%= degree %> </h5>
+                  <h5 class="my-3" id="id3"> <%= temp %><%= degree %> </h5>
                   <img src= <%= imageURL %> >
                 </div>     
         
