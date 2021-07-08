@@ -54,12 +54,14 @@ app.post("/", function(req,res)
             case '04d':
                 console.log("D");
                 music ="https://open.spotify.com/embed/album/1DFixLWuPkv3KT3TnV35m3";
+                break;
             case '09d':
                 console.log("E");
                 break;
             case '10d':
                 console.log("F");
                 music ="https://open.spotify.com/embed/album/1DFixLWuPkv3KT3TnV35m3";
+                break;
             case '11d':
                 console.log("G");
                 break;
