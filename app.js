@@ -31,6 +31,7 @@ app.post("/", function(req,res)
 
         response.on("data", function(data){
             // JSON Parse (converts in js Objects)
+            try {
             const weatherData = JSON.parse(data);
             temp = weatherData.main.temp;
             weatherDesc = weatherData.weather[0].description; 
@@ -86,7 +87,17 @@ app.post("/", function(req,res)
             default:
                 console.log("null");
                 break;
-        }
+            }
+
+            }
+            catch(err) {
+              console.log(err);
+            }
+
+
+            
+
+
         
         });
 
