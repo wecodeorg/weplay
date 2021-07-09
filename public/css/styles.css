@@ -1,14 +1,11 @@
-body {
-  background: url(../img/cloud.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-
-  /* Smoothly transition the background color */
-  transition: background-color .5s;
+video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
 }
-
 h1 {
   padding-top: 30px;
       font-family: "Ubuntu";
@@ -36,7 +33,7 @@ h1 {
 #id3{
    letter-spacing: 2px;
     text-align: center;
-    font-size: 50px;
+    font-size: 35px;
     font-weight: 300;
     color: #ffffff;
 }
@@ -51,12 +48,20 @@ iframe {
 }
 
 
+.playerback {
+  max-width: 400px;
+  max-height: 500px;
+  border-radius: 20px;
+  background: #FFF3E2;
+  
+}
 
 .weatherback {
   max-width: 400px;
   max-height: 500px;
   border-radius: 20px;
   background-color: rgba(255,255,255,0.06);
+  margin: auto;
   left: 0;
   right: 0;
   top: 0;
@@ -80,9 +85,19 @@ iframe {
     /* margin-right: -1px; */
     padding-left: 5px;
 }
-@media only screen and (width: 500px) {
-  .col-md-4 {
-  margin-top: 25px;
-  width: 100%;
+@media only screen and (max-width: 768px) {
+  .col-md-8 {
+  padding-top: 25px;
 }
 }
+
+  @media only screen and (max-width: 438px) {
+    .weatherback {
+    width: 300px;
+    text-align: center;
+    }
+    iframe {
+      width: 300px;
+      text-align: center;
+    } 
+  }

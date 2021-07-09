@@ -98,22 +98,7 @@ app.listen(3000, function()
     console.log("started");
 })
 
-//2nd method in app.post --
-// const weatherData = JSON.parse(data);
-// const icon = weatherData.weather[0].icon ;
-// console.log("object: " + weatherData.main.temp);
-// const imageURL= "https://openweathermap.org/img/wn/" + icon+"@2x.png";
 
-// res.write("<h1>yo" + weatherData.main.temp + "</h1>");
-// res.write("<h1>The weather in "+ query +" is "+ weatherData.weather[0].description + " degrees Celcius.</h1>");
-// res.write("<img src="+ imageURL + ">");
-
-
- // console.log(temp);
-        // console.log(weatherdesc);
-        // // JSON Stringify (converts all in JSON string)
-        // const object = {name:"sneha",sem:"sixth"}
-        // console.log(JSON.stringify(object));
       
         
 
