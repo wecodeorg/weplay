@@ -1,3 +1,4 @@
+#Gitignore template to ignore node modules
 # Logs
 logs
 *.log
